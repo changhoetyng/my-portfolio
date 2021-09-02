@@ -1,4 +1,4 @@
-import './styles/MainTheme.css';
+import './styles/MainTheme.scss';
 import MainMenu from './pages/MainMenu/MainMenu.js';
 
 function App() {

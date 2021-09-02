@@ -1,4 +1,4 @@
-import "./Header.css";
+import "./Header.scss";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import { Person, Mail } from "@material-ui/icons";

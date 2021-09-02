@@ -1,4 +1,4 @@
-import './MainMenu.css'
+import './MainMenu.scss'
 import Header from '../../components/Header/Header.js';
 import Home from '../../components/Home/Home.js'
 import AboutMe from '../../components/AboutMe/AboutMe.js'
