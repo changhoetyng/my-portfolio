@@ -1,9 +1,10 @@
 :root {
     --primaryColor: #C3073F;
     --backgroundColor: #000000;
+    --textcolor: #ffffff;
 }
 
 * {    
-    margin: 0 !important;
-    padding: 0 !important;
+    overflow-x :hidden;
+    margin: 0 ;
 }
