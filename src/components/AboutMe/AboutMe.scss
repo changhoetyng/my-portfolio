@@ -1,0 +1,15 @@
+.aboutMe {
+    display: flex;
+    width: 100vw;
+
+    .title {
+        display: flex;
+        color: var(--textcolor);
+        font-size: 35px;
+    }
+
+    .description {
+        color: var(--textcolor);
+        font-size: 25px;
+    }
+}

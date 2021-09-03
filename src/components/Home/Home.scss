@@ -1,49 +1,108 @@
 @import "../../styles/global.scss";
 
 .home {
-    width: 100vw;
-    height: calc(100vh - 70px);
-    background-color:var(--background-color );
-    display: flex;
-    align-items: center;
-    padding-left: 40;
+  width: 100vw;
+  // height: 33%;
+  display: flex;
+  align-items: center;
+  padding-left: 40;
 
-    @include mobile{
-        flex-direction: column;
-        align-items: center;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    position: relative;
+    padding-left: 10em;
+
+    @include mobile {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .name {
+      font-size: 60px;
+      color: var(--textcolor);
+      font-weight: 400;
+    }
+
+    .developer {
+      font-size: 35px;
+      color: #a805ff;
+      vertical-align: middle;
+      font-weight: 400;
+    }
+
+    .student {
+      font-size: 35px;
+      color: #c3073f;
+      vertical-align: middle;
+      font-weight: 400;
+    }
+
+    img {
+      vertical-align: middle;
+      width: 50px;
+    }
+
+    .plus {
+      font-size: 50px;
+      color: var(--textcolor);
+      vertical-align: middle;
+    }
+
+    .devWrapper {
+      justify-content: center;
+    }
+
+    p {
+      color: var(--textcolor);
+    }
+  }
+
+  // .right {
+  //     flex: 0.5;
+  //     overflow: hidden;
+
+  .imgContainer {
+    width: 700px;
+    height: 700px;
+    background-color: var(--primaryColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    float: right;
+
+    @include tablet {
+      width: 400px;
+      height: 400px;
+      background-color: var(--primaryColor);
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+    }
+
+    @include smaller {
+      display: none;
+    }
+
+    img {
+      height: 100%;
+      right: 0;
+      @include tablet {
+        height: 80%;
+        right: 0;
       }
 
-    .left {
-        flex: 0.5;
-        position: relative;
+      @include smaller {
+        display: none;
+      }
     }
+  }
 
-    .right {
-        flex: 0.5;
-        overflow: hidden;
-
-        .imgContainer {
-            width: 700px;
-            height: 700px;
-            background-color: crimson;
-            border-radius: 50%;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            float: right;
-            
-            @include mobile{
-                float: left;
-              }
-
-              img {
-                height: 100%;
-                right: 0;
-                @include mobile{
-                  height: 720px;
-                }
-              }
-        }
-        
-    }
+  // }
 }
