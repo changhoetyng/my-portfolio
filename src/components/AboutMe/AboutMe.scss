@@ -12,4 +12,10 @@
         color: var(--textcolor);
         font-size: 25px;
     }
+
+    .imgContainer {
+        img {
+            vertical-align: middle;
+          }
+    }
 }

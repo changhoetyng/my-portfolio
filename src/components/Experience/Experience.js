@@ -1,15 +1,37 @@
-import './Experience.css'
-import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
+import "./Experience.scss";
+import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 
 function Experience() {
   return (
-    <ParallaxLayer
-    offset={2}
-    speed={2.5}>
-      <div className="experience">
-          <p>Experience</p>
-      </div>
+    <div className="experience">
+      <ParallaxLayer
+        offset={2}
+        speed={1.0}
+        style={{ display: "flex", justifyContent: "center" }}
+      >
+        <span className="title">Experience</span>
       </ParallaxLayer>
+      <ParallaxLayer
+        offset={2}
+        speed={1.5}
+        style={{ top: 100, paddingLeft: "3em" }}
+      >
+        <div className="cardHolder">
+          <div className="card">
+            <span className="cardTitle">Software Engineering Intern</span>
+          </div>
+          <div className="card">
+            <span className="cardTitle">Software Engineering Intern</span>
+          </div>
+          <div className="card">
+            <span className="cardTitle">Software Engineering Intern</span>
+          </div>
+          <div className="card">
+            <span className="cardTitle">Software Engineering Intern</span>
+          </div>
+        </div>
+      </ParallaxLayer>
+    </div>
   );
 }
 

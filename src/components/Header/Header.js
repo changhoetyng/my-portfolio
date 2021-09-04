@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Header() {
+function Header({headerOnClick}) {
   const classes = useStyles();
   return (
     <header className="Header">
@@ -24,8 +24,8 @@ function Header() {
           <span>hoe</span>
         </div>   
         <div className="right">
-          <span>Home</span>
-          <span>About Me</span>
+          <span onClick={() => headerOnClick(0)} >Home</span>
+          <span onClick={() => headerOnClick(0.9)}>About Me</span>
           <span>Experience</span>
           <span>Projects</span>
           <span>Get In Touch</span>
