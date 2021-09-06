@@ -1,15 +1,27 @@
 import MyImage from "../../assets/me.png";
-import ComputerEmoji from "../../assets/computerEmoji.png";
+import AvatarTwo from "../../assets/avatar2.png";
+import AvatarThree from "../../assets/avatar3.png";
 import ManStudent from "../../assets/manStudent.png";
+import Worm from "../../assets/worm.png";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
-import { Typewriter } from "react-simple-typewriter";
+import "./randomObjects.scss";
 import Wink from "../../assets/wink.png";
 import Sun from "../../assets/sun.png";
 import Cloud from "../../assets/cloud.svg";
+import Stars from "../../assets/stars.svg";
 
 function RandomObjects() {
   return (
     <div className="randomObjects">
+      <ParallaxLayer
+          offset={0}
+          speed={0.7}
+          factor={10}
+          style={{
+            backgroundImage: `url(${Stars})`,
+            backgroundSize: 'cover',
+          }}
+        />
       <ParallaxLayer
         offset={0.35}
         speed={0.5}
@@ -21,7 +33,7 @@ function RandomObjects() {
         }}
       >
         <div style={{ marginLeft: "30%" }}>
-          <img style={{ width: "90px" }} src={Cloud} alt="" />
+          <img className = "cloud" src={Cloud} alt="" />
         </div>
       </ParallaxLayer>
       <ParallaxLayer
@@ -35,7 +47,7 @@ function RandomObjects() {
         }}
       >
         <div style={{ marginLeft: "20%" }}>
-          <img style={{ width: "90px" }} src={Cloud} alt="" />
+          <img className = "cloud" src={Cloud} alt="" />
         </div>
       </ParallaxLayer>
       <ParallaxLayer
@@ -49,7 +61,7 @@ function RandomObjects() {
         }}
       >
         <div style={{ marginLeft: "40%" }}>
-          <img style={{ width: "90px" }} src={Cloud} alt="" />
+          <img className = "cloud" src={Cloud} alt="" />
         </div>
       </ParallaxLayer>
       <ParallaxLayer
@@ -62,12 +74,12 @@ function RandomObjects() {
           zIndex: -10,
         }}
       >
-        <div style={{ marginLeft: "10%" }}>
-          <img style={{ width: "200px" }} src={Sun} alt="" />
+        <div style={{ marginLeft: "10%"}}>
+          <img className = "sun" src={Sun} alt="" />
         </div>
       </ParallaxLayer>
       <ParallaxLayer
-        offset={1.01}
+        offset={0.1}
         speed={0.9}
         style={{
           position: "absolute",
@@ -76,8 +88,8 @@ function RandomObjects() {
           zIndex: -10,
         }}
       >
-        <div style={{ marginLeft: "30%" }}>
-          <img style={{ width: "90px" }} src={Cloud} alt="" />
+        <div style={{ marginLeft: "50%" }}>
+          <img className = "cloud" src={Cloud} alt="" />
         </div>
       </ParallaxLayer>
       <ParallaxLayer
@@ -91,7 +103,7 @@ function RandomObjects() {
         }}
       >
         <div style={{ marginLeft: "15%" }}>
-          <img style={{ width: "90px" }} src={Cloud} alt="" />
+          <img className = "cloud" src={Cloud} alt="" />
         </div>
       </ParallaxLayer>
       <ParallaxLayer
@@ -105,7 +117,7 @@ function RandomObjects() {
         }}
       >
         <div style={{ marginLeft: "45%" }}>
-          <img style={{ width: "90px" }} src={Cloud} alt="" />
+          <img className = "cloud" src={Cloud} alt="" />
         </div>
       </ParallaxLayer>
       <ParallaxLayer
@@ -119,12 +131,12 @@ function RandomObjects() {
         }}
       >
         <div style={{ marginLeft: "65%" }}>
-          <img style={{ width: "90px" }} src={Cloud} alt="" />
+          <img className = "cloud" src={Cloud} alt="" />
         </div>
       </ParallaxLayer>
       <ParallaxLayer
         offset={1}
-        speed={0.5}
+        speed={0.3}
         style={{
           position: "absolute",
           right: 0,
@@ -134,6 +146,34 @@ function RandomObjects() {
       >
         <div style={{ marginLeft: "50%" }}>
           <img src={Wink} alt="" />
+        </div>
+      </ParallaxLayer>
+      <ParallaxLayer
+        offset={1.3}
+        speed={0.7}
+        style={{
+          position: "absolute",
+          right: 0,
+          opacity: 0.6,
+          zIndex: -10,
+        }}
+      >
+        <div style={{ marginLeft: "20px" }}>
+          <img src={AvatarTwo} alt="" />
+        </div>
+      </ParallaxLayer>
+      <ParallaxLayer
+        offset={1.9}
+        speed={0.45}
+        style={{
+          position: "absolute",
+          right: 0,
+          opacity: 0.6,
+          zIndex: -10,
+        }}
+      >
+        <div style={{ marginLeft: "20%" }}>
+          <img src={AvatarThree} alt="" />
         </div>
       </ParallaxLayer>
     </div>

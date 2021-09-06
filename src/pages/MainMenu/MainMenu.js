@@ -3,11 +3,13 @@ import Header from "../../components/Header/Header.js";
 import Home from "../../components/Home/Home.js";
 import AboutMe from "../../components/AboutMe/AboutMe.js";
 import Experience from "../../components/Experience/Experience.js";
+import Projects from "../../components/Projects/Projects.js";
 import RandomObjects from "../../components/RandomObjects/RandomObjects.js";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import React, { useRef, useEffect } from "react";
 
 function MainMenu() {
+
   const parallaxRef = useRef();
 
   const onScroll = () =>
@@ -26,7 +28,7 @@ function MainMenu() {
     <div>
       <Header headerOnClick={headerOnClick} />
       <Parallax
-        pages={4}
+        pages={5}
         style={{ backgroundColor: "black", top: "70px" }}
         ref={parallaxRef}
       >
@@ -39,7 +41,7 @@ function MainMenu() {
         <Home />
         <AboutMe />
         <Experience />
-        {/* <Projects /> */}
+        <Projects />
         {/* <GetInTouch /> */}
         {/* </div> */}
         {/* </div> */}

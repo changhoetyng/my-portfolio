@@ -1,0 +1,22 @@
+@import "../../styles/global.scss";
+
+.randomObjects {
+    @include mobile{
+        // display: none;
+    }
+
+    .cloud {
+        width: 90px;
+
+        @include mobile{
+            width: 30px;
+        }
+    }
+
+    .sun {
+        width: 200px;
+        @include mobile {
+            width: 100px;
+        }
+    }
+}

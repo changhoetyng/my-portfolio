@@ -1,6 +1,5 @@
 import "./AboutMe.scss";
-import {ParallaxLayer} from "@react-spring/parallax";
-
+import { ParallaxLayer } from "@react-spring/parallax";
 
 function AboutMe() {
   return (
@@ -12,12 +11,8 @@ function AboutMe() {
       >
         <span className="title">About Me</span>
       </ParallaxLayer>
-      <ParallaxLayer
-        offset={1}
-        speed={1.5}
-        style={{ top: 100, paddingLeft: "3em" }}
-      >
-        <div className = "descriptionHolder">
+      <ParallaxLayer offset={1} speed={1.5} style={{ top: 100 }}>
+        <div className="descriptionHolder">
           <p className="description">
             Hi, my name is Chang Hoe Tyng. I’m a Year 3 Computer Science with
             A.I. student that are currently studying in the University of

@@ -7,44 +7,20 @@ import React, { useState } from "react";
 
 function Experience() {
   const [isFirstActive, setFirstActive] = useState(false);
-  const [isFirstVisible, setFirstVisible] = useState(true);
   const [isSecondActive, setSecondActive] = useState(false);
-  const [isSecondVisible, setSecondVisible] = useState(true);
   const [isThirdActive, setThirdActive] = useState(false);
-  const [isThirdVisible, setThirdVisible] = useState(true);
 
   function turn(modalType) {
     if (modalType === "first") {
       isFirstActive ? setFirstActive(false) : setFirstActive(true);
-      if (isFirstActive) {
-        setSecondVisible(true);
-        setThirdVisible(true);
-      } else {
-        setSecondVisible(false);
-        setThirdVisible(false);
-      }
     }
 
     if (modalType === "second") {
       isSecondActive ? setSecondActive(false) : setSecondActive(true);
-      if (isSecondActive) {
-        setFirstVisible(true);
-        setThirdVisible(true);
-      } else {
-        setFirstVisible(false);
-        setThirdVisible(false);
-      }
     }
 
     if (modalType === "third") {
       isThirdActive ? setThirdActive(false) : setThirdActive(true);
-      if (isThirdActive) {
-        setFirstVisible(true);
-        setSecondVisible(true);
-      } else {
-        setFirstVisible(false);
-        setSecondVisible(false);
-      }
     }
   }
 

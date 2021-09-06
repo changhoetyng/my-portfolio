@@ -1,5 +1,150 @@
+@import "../../styles/global.scss";
+
 .projects {
-    width: 100vw;
-    height: calc(100vh - 70px);
-    background-color: bisque;
+  width: 100vw;
+  height: 100vw;
+
+  .title {
+    display: flex;
+    color: var(--textcolor);
+    font-size: 35px;
+  }
+
+  .cardHolder {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    padding-left: 150px;
+    padding-right: 150px;
+
+    @include tablet {
+      display:inline-block;
+      text-align: center;
+      padding: 0;
+    }
+
+    .card {
+      margin-top: 30px;
+      display: inline-block;
+      height: 280px;
+      width: 280px;
+      background-color: var(--primaryColor);
+      border-radius: 20px;
+      padding: 15px;
+      margin-left: 50px;
+      cursor: pointer;
+      color: var(--textcolor);
+      transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+        0.3s box-shadow,
+        0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+        height 0.5s, width 0.5s, opacity 0.7s;
+      transform: scale(1);
+      flex: 1;
+
+      @include mobile {
+        margin-left: 0px;
+      }
+
+      &:hover {
+        transform: scale(1.02);
+      }
+
+      .logo {
+        width: 40px;
+        vertical-align: middle;
+      }
+
+      .cardTitle {
+        font-size: 25px;
+      }
+
+      .companyName {
+        margin-left: 10px;
+        font-size: 15px;
+        vertical-align: middle;
+      }
+
+      .period {
+        margin-top: 5px;
+        font-size: 15px;
+      }
+
+      .learnMore {
+        margin-top: 50px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 15px;
+      }
+
+      .middle {
+        display: none;
+      }
+
+      .right {
+        display: none;
+      }
+    }
+
+    .cardActive {
+      margin-top: 30px;
+      display: inline-block;
+      height: 500px;
+      width: 280px;
+      background-color: var(--primaryColor);
+      border-radius: 20px;
+      padding: 15px;
+      margin-left: 50px;
+      cursor: pointer;
+      color: var(--textcolor);
+      transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+        0.3s box-shadow,
+        0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+        height 0.5s, width 0.5s;
+      transform: scale(1);
+      flex: 1;
+
+      @include mobile {
+        margin-left: 0px;
+      }
+
+      &:hover {
+        transform: scale(1.01);
+      }
+
+      .logo {
+        width: 40px;
+        vertical-align: middle;
+      }
+
+      .cardTitle {
+        font-size: 25px;
+      }
+
+      .companyName {
+        margin-left: 10px;
+        font-size: 15px;
+        vertical-align: middle;
+      }
+
+      .period {
+        margin-top: 5px;
+        font-size: 15px;
+      }
+
+      .clickme {
+        display: none;
+      }
+
+      .right {
+        .title {
+          margin-top: 10px;
+          text-decoration: underline;
+          font-size: 20px;
+        }
+        .description {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
