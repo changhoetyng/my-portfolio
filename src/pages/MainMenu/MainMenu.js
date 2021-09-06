@@ -3,8 +3,6 @@ import Header from "../../components/Header/Header.js";
 import Home from "../../components/Home/Home.js";
 import AboutMe from "../../components/AboutMe/AboutMe.js";
 import Experience from "../../components/Experience/Experience.js";
-import Projects from "../../components/Projects/Projects.js";
-import GetInTouch from "../../components/GetInTouch/GetInTouch.js";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import React, { useRef, useEffect } from "react";
 
@@ -27,7 +25,7 @@ function MainMenu() {
     <div>
       <Header headerOnClick={headerOnClick} />
       <Parallax
-        pages={3}
+        pages={4}
         style={{ backgroundColor: "black", top: "70px" }}
         ref={parallaxRef}
       >

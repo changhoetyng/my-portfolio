@@ -1,5 +1,5 @@
 import "./AboutMe.scss";
-import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
+import {ParallaxLayer} from "@react-spring/parallax";
 import Wink from '../../assets/wink.png'
 
 function AboutMe() {
