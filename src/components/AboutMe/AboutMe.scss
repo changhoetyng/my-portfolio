@@ -1,21 +1,27 @@
+@import "../../styles/global.scss";
 .aboutMe {
-    display: flex;
-    width: 100vw;
+  display: flex;
+  width: 100vw;
 
-    .title {
-        display: flex;
-        color: var(--textcolor);
-        font-size: 35px;
-    }
+  .title {
+    display: flex;
+    color: var(--textcolor);
+    font-size: 35px;
+  }
+
+  .descriptionHolder {
+    text-align: center;
+    @include mobile {
+        width: 70%;
+      }
 
     .description {
-        color: var(--textcolor);
-        font-size: 25px;
+      color: var(--textcolor);
+      font-size: 25px;
+      @include mobile {
+        font-size: 15px;
+        display: inline;
+      }
     }
-
-    .imgContainer {
-        img {
-            vertical-align: middle;
-          }
-    }
+  }
 }

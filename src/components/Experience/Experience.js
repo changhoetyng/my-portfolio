@@ -60,19 +60,12 @@ function Experience() {
       <ParallaxLayer
         offset={2}
         speed={1.5}
-        factor={2.0}
-        style={{ top: 100, paddingLeft: "3em" }}
+        factor={4.0}
+        style={{ top: 100}}
       >
         <div className="cardHolder">
           <div
             className={isFirstActive ? "cardActive" : "card"}
-            style={
-              isFirstActive
-                ? { flex: 1, display: "flex", flexDirection: "column" }
-                : isFirstVisible
-                ? null
-                : { opacity: 1 }
-            }
             onClick={() => turn("first")}
           >
             <div
@@ -94,10 +87,6 @@ function Experience() {
               </p>
             </div>
 
-            <div class="middle" style={{ flex: 0.02 }}>
-              <div className="verticalLine" />
-            </div>
-
             <div class="right" style={{ flex: 0.60 }}>
               <p className="title">Description</p>
               <br />
@@ -114,13 +103,6 @@ function Experience() {
           </div>
           <div
             className={isSecondActive ? "cardActive" : "card"}
-            style={
-              isSecondActive
-                ? { flex: 1, display: "flex", flexDirection: "column" }
-                : isSecondVisible
-                ? null
-                : { opacity: 1 }
-            }
             onClick={() => turn("second")}
           >
             <div
@@ -140,10 +122,6 @@ function Experience() {
               >
                 Click me to learn more.
               </p>
-            </div>
-
-            <div class="middle" style={{ flex: 0.02 }}>
-              <div className="verticalLine" />
             </div>
 
             <div class="right" style={{ flex: 0.60 }}>
@@ -168,13 +146,6 @@ function Experience() {
           </div>
           <div
             className={isThirdActive ? "cardActive" : "card"}
-            style={
-              isThirdActive
-                ? { flex: 1, display: "flex", flexDirection: "column" }
-                : isThirdVisible
-                ? null
-                : { opacity: 1 }
-            }
             onClick={() => turn("third")}
           >
             <div
@@ -194,10 +165,6 @@ function Experience() {
               >
                 Click me to learn more.
               </p>
-            </div>
-
-            <div class="middle" style={{ flex: 0.02 }}>
-              <hr />
             </div>
 
             <div class="right" style={{ flex: 0.60 }}>

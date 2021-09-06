@@ -1,6 +1,6 @@
 import "./AboutMe.scss";
 import {ParallaxLayer} from "@react-spring/parallax";
-import Wink from '../../assets/wink.png'
+
 
 function AboutMe() {
   return (
@@ -17,7 +17,7 @@ function AboutMe() {
         speed={1.5}
         style={{ top: 100, paddingLeft: "3em" }}
       >
-        <div style={{ width: "50%" }}>
+        <div className = "descriptionHolder">
           <p className="description">
             Hi, my name is Chang Hoe Tyng. I’m a Year 3 Computer Science with
             A.I. student that are currently studying in the University of
@@ -46,18 +46,6 @@ function AboutMe() {
           </p>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer
-        offset={1}
-        speed={0.5}
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "flex-end"
-        }}>
-          <div className="imgContainer">
-            <img src={Wink} alt="" />
-          </div>
-        </ParallaxLayer>
     </div>
   );
 }

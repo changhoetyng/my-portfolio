@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header.js";
 import Home from "../../components/Home/Home.js";
 import AboutMe from "../../components/AboutMe/AboutMe.js";
 import Experience from "../../components/Experience/Experience.js";
+import RandomObjects from "../../components/RandomObjects/RandomObjects.js";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import React, { useRef, useEffect } from "react";
 
@@ -34,6 +35,7 @@ function MainMenu() {
         {/* <div className="mainMenu"> */}
 
         {/* <div className="section"> */}
+        <RandomObjects />
         <Home />
         <AboutMe />
         <Experience />
