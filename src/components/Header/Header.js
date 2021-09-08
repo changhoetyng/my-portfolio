@@ -23,8 +23,8 @@ function Header({headerOnClick}) {
         <div className="right">
           <span onClick={() => headerOnClick(0)} >Home</span>
           <span onClick={() => headerOnClick(0.9)}>About Me</span>
-          <span>Experience</span>
-          <span>Projects</span>
+          <span onClick={() => headerOnClick(1.9)}>Experience</span>
+          <span onClick={() => headerOnClick(2.9)}>Projects</span>
           <span>Get In Touch</span>
         </div>
       </div>

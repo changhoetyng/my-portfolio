@@ -1,0 +1,16 @@
+.skills {
+    height: 100vw;
+    width: 100vw;
+
+    .title {
+        display: flex;
+        color: var(--textcolor);
+        font-size: 35px;
+    }
+
+    .skillsTitle {
+        display: flex;
+        color: var(--textcolor);
+        font-size: 20px;
+    }
+}

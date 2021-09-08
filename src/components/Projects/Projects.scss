@@ -26,13 +26,12 @@
     .card {
       margin-top: 30px;
       display: inline-block;
-      height: 280px;
+      height: 120px;
       width: 280px;
       background-color: var(--primaryColor);
       border-radius: 20px;
       padding: 15px;
       margin-left: 50px;
-      cursor: pointer;
       color: var(--textcolor);
       transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
         0.3s box-shadow,
@@ -45,35 +44,39 @@
         margin-left: 0px;
       }
 
-      &:hover {
-        transform: scale(1.02);
+      .logo {
+        width: 25px;
+        position: absolute;
+        bottom: 24px;
+        right: 15px;
+        cursor: pointer;
       }
 
-      .logo {
-        width: 40px;
-        vertical-align: middle;
+      .browser {
+        width: 25px;
+        position: absolute;
+        bottom: 24px;
+        right: 55px;
+        cursor: pointer;
+      }
+
+      .button {
+        color: white;
+        border-color: white; 
+        border-radius: 10; 
+        width: 125px;
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        left: 15px;
+
+        &:hover {
+          transform: scale(1.01);
+        }
       }
 
       .cardTitle {
         font-size: 25px;
-      }
-
-      .companyName {
-        margin-left: 10px;
-        font-size: 15px;
-        vertical-align: middle;
-      }
-
-      .period {
-        margin-top: 5px;
-        font-size: 15px;
-      }
-
-      .learnMore {
-        margin-top: 50px;
-        text-align: center;
-        vertical-align: middle;
-        font-size: 15px;
       }
 
       .middle {
@@ -107,32 +110,44 @@
         margin-left: 0px;
       }
 
-      &:hover {
-        transform: scale(1.01);
+      .logo {
+        width: 25px;
+        position: absolute;
+        bottom: 24px;
+        right: 15px;
+        cursor: pointer;
       }
 
-      .logo {
-        width: 40px;
-        vertical-align: middle;
+      .browser {
+        width: 25px;
+        position: absolute;
+        bottom: 24px;
+        right: 15px;
+        cursor: pointer;
+      }
+
+      .button {
+        color: white;
+        border-color: white; 
+        border-radius: 10; 
+        width: 125px;
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        left: 15px;
+
+        &:hover {
+          transform: scale(1.01);
+        }
       }
 
       .cardTitle {
         font-size: 25px;
       }
 
-      .companyName {
-        margin-left: 10px;
-        font-size: 15px;
-        vertical-align: middle;
-      }
-
       .period {
         margin-top: 5px;
         font-size: 15px;
-      }
-
-      .clickme {
-        display: none;
       }
 
       .right {
