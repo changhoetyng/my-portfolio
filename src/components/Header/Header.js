@@ -25,7 +25,8 @@ function Header({headerOnClick}) {
           <span onClick={() => headerOnClick(0.9)}>About Me</span>
           <span onClick={() => headerOnClick(1.9)}>Experience</span>
           <span onClick={() => headerOnClick(2.9)}>Projects</span>
-          <span>Get In Touch</span>
+          <span onClick={() => headerOnClick(3.9)}>Skills</span>
+          <span onClick={() => headerOnClick(4.9)}>Get In Touch</span>
         </div>
       </div>
     </header>
