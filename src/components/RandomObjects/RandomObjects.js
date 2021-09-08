@@ -1,8 +1,5 @@
-import MyImage from "../../assets/me.png";
 import AvatarTwo from "../../assets/avatar2.png";
 import AvatarThree from "../../assets/avatar3.png";
-import ManStudent from "../../assets/manStudent.png";
-import Worm from "../../assets/worm.png";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import "./randomObjects.scss";
 import Wink from "../../assets/wink.png";
@@ -16,7 +13,7 @@ function RandomObjects() {
       <ParallaxLayer
           offset={0}
           speed={0.7}
-          factor={10}
+          factor={8}
           style={{
             backgroundImage: `url(${Stars})`,
             backgroundSize: 'cover',

@@ -1,8 +1,5 @@
 import "./Skills.scss";
 import { ParallaxLayer } from "@react-spring/parallax";
-import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
-import { GitHub, Language } from '@material-ui/icons';
 import React, { useState } from "react";
 
 function Skills() {
@@ -22,7 +19,7 @@ function Skills() {
         style={{
           position: "absolute",
           right: 0,
-          opacity: 0.5,
+          opacity: 0.75,
           zIndex: -10,
         }}
       >
@@ -36,7 +33,7 @@ function Skills() {
         style={{
           position: "absolute",
           right: 0,
-          opacity: 0.5,
+          opacity: 0.75,
           zIndex: -10,
         }}
       >
@@ -50,7 +47,7 @@ function Skills() {
         style={{
           position: "absolute",
           right: 0,
-          opacity: 0.5,
+          opacity: 0.75,
           zIndex: -10,
         }}
       >
@@ -64,7 +61,7 @@ function Skills() {
         style={{
           position: "absolute",
           right: 0,
-          opacity: 0.5,
+          opacity: 0.75,
           zIndex: -10,
         }}
       >
@@ -78,7 +75,7 @@ function Skills() {
         style={{
           position: "absolute",
           right: 0,
-          opacity: 0.5,
+          opacity: 0.75,
           zIndex: -10,
         }}
       >
@@ -92,7 +89,7 @@ function Skills() {
         style={{
           position: "absolute",
           right: 0,
-          opacity: 0.5,
+          opacity: 0.75,
           zIndex: -10,
         }}
       >
@@ -106,7 +103,7 @@ function Skills() {
         style={{
           position: "absolute",
           right: 0,
-          opacity: 0.5,
+          opacity: 0.75,
           zIndex: -10,
         }}
       >
@@ -120,7 +117,7 @@ function Skills() {
         style={{
           position: "absolute",
           right: 0,
-          opacity: 0.5,
+          opacity: 0.75,
           zIndex: -10,
         }}
       >
@@ -134,7 +131,7 @@ function Skills() {
         style={{
           position: "absolute",
           right: 0,
-          opacity: 0.5,
+          opacity: 0.75,
           zIndex: -10,
         }}
       >
@@ -148,7 +145,7 @@ function Skills() {
         style={{
           position: "absolute",
           right: 0,
-          opacity: 0.5,
+          opacity: 0.75,
           zIndex: -10,
         }}
       >
@@ -162,7 +159,7 @@ function Skills() {
         style={{
           position: "absolute",
           right: 0,
-          opacity: 0.5,
+          opacity: 0.75,
           zIndex: -10,
         }}
       >
@@ -176,7 +173,7 @@ function Skills() {
         style={{
           position: "absolute",
           right: 0,
-          opacity: 0.5,
+          opacity: 0.75,
           zIndex: -10,
         }}
       >

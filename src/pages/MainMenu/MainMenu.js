@@ -5,6 +5,7 @@ import AboutMe from "../../components/AboutMe/AboutMe.js";
 import Experience from "../../components/Experience/Experience.js";
 import Projects from "../../components/Projects/Projects.js";
 import Skills from "../../components/Skills/Skills.js";
+import GetInTouch from "../../components/GetInTouch/GetInTouch.js";
 import RandomObjects from "../../components/RandomObjects/RandomObjects.js";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import React, { useRef, useEffect } from "react";
@@ -29,7 +30,7 @@ function MainMenu() {
     <div>
       <Header headerOnClick={headerOnClick} />
       <Parallax
-        pages={6}
+        pages={5.65}
         style={{ backgroundColor: "black", top: "70px" }}
         ref={parallaxRef}
       >
@@ -44,7 +45,7 @@ function MainMenu() {
         <Experience />
         <Projects />
         <Skills />
-        {/* <GetInTouch /> */}
+        <GetInTouch />
         {/* </div> */}
         {/* </div> */}
       </Parallax>
