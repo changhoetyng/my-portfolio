@@ -16,7 +16,7 @@ function MainMenu() {
 
   const parallaxRef = useRef();
 
-  const [isModal, setModal] = useState(true);
+  // const [isModal, setModal] = useState(true);
 
   const onScroll = () =>
     parallaxRef.current.current / parallaxRef.current.space
@@ -30,7 +30,7 @@ function MainMenu() {
     parallaxRef.current.scrollTo(num);
   };
 
-  var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+  // var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
 
   return (
     <div>
@@ -49,11 +49,6 @@ function MainMenu() {
         style={{ backgroundColor: "black", top: "70px" }}
         ref={parallaxRef}
       >
-        {/* <ParallaxLayer offset={3} speed={2.5} background-color={"darkgoldenrod"}/>
-    <ParallaxLayer offset={4} speed={2.5} background-color={"darkgoldenrod"}/> */}
-        {/* <div className="mainMenu"> */}
-
-        {/* <div className="section"> */}
         <RandomObjects />
         <Home />
         <AboutMe />
@@ -61,8 +56,6 @@ function MainMenu() {
         <Projects />
         <Skills />
         <GetInTouch />
-        {/* </div> */}
-        {/* </div> */}
       </Parallax>
     </div>
   );
