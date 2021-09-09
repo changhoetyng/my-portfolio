@@ -82,7 +82,7 @@ function Projects() {
               <span className="cardTitle">University Utilities Booking Mobile App</span>
               <br />
               <Button variant="outlined" className="button" size="small" onClick={() => turn("third")}>{!isThirdActive ? "Show More." : "Show Less."}</Button>
-              <GitHub className="logo" />
+              <GitHub className="logo" onClick={() => openInNewTab('https://github.com/changhoetyng/University-Utilities-Booking-Mobile-App')}/>
             </div>
 
             <div class="right" style={{ flex: 0.6 }}>
