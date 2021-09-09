@@ -67,13 +67,16 @@ function Experience() {
               <p className="title">Description</p>
               <br />
               <p className="description">
-                - Developed test cases for Node.js backend using Jest.
+              - Assisted in developing and maintaining the Food Merchant App from scratch using React Native (Staging to Production in less than 20 days).
               </p>
               <p className="description">
-                - Developed a food reservation app using React Native as the
-                frontend and a three-layered structure backend which consists of
-                MySQL database at the bottom, Sequelize as the ORM and Fastify
-                as the controller.
+              - Worked in an agile working environment.
+              </p>
+              <p className="description">
+              - Assisted in creating test cases for every AirAsia e-commerce website using Selenium.
+              </p>
+              <p className="description">
+              - Created test cases for backend using mocha and chai.
               </p>
             </div>
           </div>
