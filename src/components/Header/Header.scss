@@ -22,13 +22,12 @@
         font-size: 35px;
         font-family: "Lily Script One";
         color: var(--textcolor);
-        cursor: pointer;
       }
     }
     .right {
       display: flex;
 
-      span {
+      .menuBig {
         display: flex;
         margin-left: 30px;
         align-self: center;
@@ -36,7 +35,7 @@
         font-size: 16px;
         cursor: pointer;
 
-        @include mobile{
+        @include mobile {
           display: none;
         }
       }

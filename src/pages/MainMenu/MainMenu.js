@@ -8,11 +8,15 @@ import Skills from "../../components/Skills/Skills.js";
 import GetInTouch from "../../components/GetInTouch/GetInTouch.js";
 import RandomObjects from "../../components/RandomObjects/RandomObjects.js";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
+import { Modal } from "@material-ui/core";
+
 
 function MainMenu() {
 
   const parallaxRef = useRef();
+
+  const [isModal, setModal] = useState(true);
 
   const onScroll = () =>
     parallaxRef.current.current / parallaxRef.current.space
@@ -26,11 +30,22 @@ function MainMenu() {
     parallaxRef.current.scrollTo(num);
   };
 
+  var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+
   return (
     <div>
+      {/* Will fix when they update react-lottie */}
+      {/* <Modal
+      open={isModal}
+      onClose={() => setModal(false)}
+      >
+        <div className="modal">
+          <h1 style={{color: 'white'}}>test</h1>
+        </div>
+      </Modal> */}
       <Header headerOnClick={headerOnClick} />
       <Parallax
-        pages={5.65}
+        pages={5.70}
         style={{ backgroundColor: "black", top: "70px" }}
         ref={parallaxRef}
       >
