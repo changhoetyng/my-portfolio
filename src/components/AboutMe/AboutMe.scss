@@ -5,6 +5,7 @@
 
   .title {
     display: flex;
+    font-weight: bold;
     color: var(--textcolor);
     font-size: 35px;
   }
@@ -16,6 +17,7 @@
 
     .description {
       color: var(--textcolor);
+      line-height: 1.6;
       font-size: 25px;
       @include mobile {
         font-size: 15px;

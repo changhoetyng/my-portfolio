@@ -4,6 +4,7 @@ import ComputerEmoji from "../../assets/computerEmoji.png";
 import ManStudent from "../../assets/manStudent.png";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import { Typewriter } from 'react-simple-typewriter'
+import Button from "@material-ui/core/Button";
 
 function Home() {
   return (
@@ -44,6 +45,7 @@ function Home() {
               currently pursuing a
             </p>
             <p>degree in Computer Science with A.I.</p>
+            <Button variant="outlined" className="button" size="small" onClick={() => console.log("third")}>My Resume</Button>
           </div>
         </ParallaxLayer>
         <ParallaxLayer
