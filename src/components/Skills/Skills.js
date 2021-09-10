@@ -112,6 +112,20 @@ function Skills() {
         </div>
       </ParallaxLayer>
       <ParallaxLayer
+        offset={4.47}
+        speed={0.78}
+        style={{
+          position: "absolute",
+          right: 0,
+          opacity: 0.75,
+          zIndex: -10,
+        }}
+      >
+        <div style={{ marginLeft: "85%" }}>
+        <p className="skillsTitle">Sass</p>
+        </div>
+      </ParallaxLayer>
+      <ParallaxLayer
         offset={4.45}
         speed={0.77}
         style={{
@@ -165,6 +179,20 @@ function Skills() {
       >
         <div style={{ marginLeft: "45%" }}>
         <p className="skillsTitle">HTML/CSS</p>
+        </div>
+      </ParallaxLayer>
+      <ParallaxLayer
+        offset={4.61}
+        speed={0.92}
+        style={{
+          position: "absolute",
+          right: 0,
+          opacity: 0.75,
+          zIndex: -10,
+        }}
+      >
+        <div style={{ marginLeft: "75%" }}>
+        <p className="skillsTitle">Node.js</p>
         </div>
       </ParallaxLayer>
       <ParallaxLayer

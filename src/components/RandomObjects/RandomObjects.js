@@ -131,7 +131,7 @@ function RandomObjects() {
           <img className = "cloud" src={Cloud} alt="" />
         </div>
       </ParallaxLayer>
-      <ParallaxLayer
+      {/* <ParallaxLayer
         offset={1}
         speed={0.3}
         style={{
@@ -144,8 +144,8 @@ function RandomObjects() {
         <div style={{ marginLeft: "50%" }}>
           <img src={Wink} alt="" />
         </div>
-      </ParallaxLayer>
-      <ParallaxLayer
+      </ParallaxLayer> */}
+      {/* <ParallaxLayer
         offset={1.3}
         speed={0.7}
         style={{
@@ -158,8 +158,8 @@ function RandomObjects() {
         <div style={{ marginLeft: "20px" }}>
           <img src={AvatarTwo} alt="" />
         </div>
-      </ParallaxLayer>
-      <ParallaxLayer
+      </ParallaxLayer> */}
+      {/* <ParallaxLayer
         offset={1.9}
         speed={0.45}
         style={{
@@ -172,7 +172,7 @@ function RandomObjects() {
         <div style={{ marginLeft: "20%" }}>
           <img src={AvatarThree} alt="" />
         </div>
-      </ParallaxLayer>
+      </ParallaxLayer> */}
     </div>
   );
 }
