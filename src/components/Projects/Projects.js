@@ -4,16 +4,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import { GitHub, Language } from '@material-ui/icons';
 import React, { useState } from "react";
+import { openInNewTab } from "../../functions/openInNewTab";
 
 function Projects() {
   const [isFirstActive, setFirstActive] = useState(false);
   const [isSecondActive, setSecondActive] = useState(false);
   const [isThirdActive, setThirdActive] = useState(false);
-
-  const openInNewTab = (url) => {
-    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-    if (newWindow) newWindow.opener = null
-  }
 
   function turn(modalType) {
     if (modalType === "first") {

@@ -1,12 +1,10 @@
 import "./GetInTouch.scss";
 import { ParallaxLayer } from "@react-spring/parallax";
 import { GitHub, LinkedIn } from '@material-ui/icons';
+import { openInNewTab } from "../../functions/openInNewTab";
+import { Button } from "@material-ui/core";
 
 function GetInTouch() {
-  const openInNewTab = (url) => {
-    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-    if (newWindow) newWindow.opener = null
-  }
 
   return (
     <div className="getInTouch">
@@ -29,6 +27,7 @@ function GetInTouch() {
           <GitHub style={{cursor: 'pointer'}} onClick={() => openInNewTab('https://github.com/changhoetyng')}/>
           <LinkedIn style={{marginLeft: '8px', cursor: 'pointer'}} onClick={() => openInNewTab('https://www.linkedin.com/in/hoe-tyng-chang/')}/>
           </div>
+          <Button variant="outlined" className="button" size="small" onClick={() => openInNewTab("https://drive.google.com/file/d/1r22OyrOADzEF3nVaYo_TVl6kCjTqrbrF/view?usp=sharing")}>My Resume</Button>
         </div>
       </ParallaxLayer>
     </div>
