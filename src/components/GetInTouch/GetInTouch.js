@@ -11,12 +11,11 @@ function GetInTouch() {
       <ParallaxLayer
         offset={5}
         speed={1.0}
-        factor={0.6}
         style={{ display: "flex", backgroundColor: "white", padding: "40px" }}
       >
         <div className="container">
           <p className="title">Get In Touch</p>
-          <p className="phone">Phone: +60172483131</p>
+          <p className="phone">Phone: (+44)7747146073</p>
           <a 
             className="email"
             href="mailto:hoetyng@gmail.com"
