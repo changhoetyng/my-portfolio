@@ -45,7 +45,7 @@ function MainMenu() {
       </Modal> */}
       <Header headerOnClick={headerOnClick} />
       <Parallax
-        pages={5.70}
+        pages={5.75}
         style={{ backgroundColor: "black", top: "70px" }}
         ref={parallaxRef}
       >
