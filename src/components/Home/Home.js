@@ -35,14 +35,13 @@ function Home() {
             <span className="developer">Developer</span>
             <img src={ComputerEmoji} alt="" />
             <span className="plus">+ </span>
-            <span className="student">Final Year Student</span>
+            <span className="student">Fresh Graduate Student</span>
             <img src={ManStudent} alt="" />
           </div>
 
           <br />
           <p>
-            I'm a Year 3 student in the University of Nottingham that is
-            currently pursuing a
+            I'm a Fresh Graduate student at the University of Nottingham that pursued a
           </p>
           <p>degree in Computer Science with A.I.</p>
         </div>

@@ -14,17 +14,16 @@ function AboutMe() {
       <ParallaxLayer offset={1} speed={1.5} style={{ top: 100 }}>
         <div className="descriptionHolder">
           <p className="description">
-            Hi, my name is Chang Hoe Tyng. I’m a Year 3 Computer Science with
-            A.I. student that are currently studying in the University of
+            Hi, my name is Chang Hoe Tyng. I’m a Graduated Computer Science with
+            A.I. student that studied in the University of
             Nottingham.
           </p>
           <br />
           <br />
           <p className="description">
-            I enjoy learning things that are tech-related whether that be a new
-            framework or new tech stacks which leads me to innovate personal
-            projects and acquiring better knowledge in this field during my
-            pastime.
+            I enjoy learning things that are tech-related whether that be a new framework or 
+            new tech stacks which leads me to innovate personal projects and acquire better 
+            knowledge in this field during my pastime.
           </p>
           <br />
           <br />

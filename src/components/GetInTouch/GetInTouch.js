@@ -26,7 +26,7 @@ function GetInTouch() {
           <GitHub style={{cursor: 'pointer'}} onClick={() => openInNewTab('https://github.com/changhoetyng')}/>
           <LinkedIn style={{marginLeft: '8px', cursor: 'pointer'}} onClick={() => openInNewTab('https://www.linkedin.com/in/hoe-tyng-chang/')}/>
           </div>
-          <Button variant="outlined" className="button" size="small" onClick={() => openInNewTab("https://drive.google.com/file/d/1VRFzxvT-Ce2z8oPrKbWcBCpsxaBFeEBs/view?usp=sharing")}>My Resume</Button>
+          <Button variant="outlined" className="button" size="small" onClick={() => openInNewTab("https://drive.google.com/file/d/1p14TXTrO4ckIDP4We292-3CDC2tpv-0N/view?usp=sharing")}>My Resume</Button>
         </div>
       </ParallaxLayer>
     </div>
